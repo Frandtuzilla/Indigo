@@ -58,13 +58,26 @@ body {
 }
 
 /* Main Navigation */
+/* Make nav sticky */
 .main-nav {
-    background-color: rgba(194, 152, 109, 0.3);
-    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure nav stays above other content */
+    background-color: rgba(194, 152, 109, 0.3); /* Keeping the existing tan background */
+    padding: 15px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease; /* Smooth transition for any changes */
+    backdrop-filter: blur(5px); /* Adds a slight blur effect to the background */
+}
+
+/* Optional: Add a subtle animation when scrolling */
+.main-nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.85); /* Keeping the existing tan background */
+    padding: 10px 5%; /* Slightly reduce padding when scrolled */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15); /* Enhanced shadow when scrolled */
 }
 
 .logo a {

@@ -60,7 +60,7 @@ body {
 /* Main Navigation */
 .main-nav {
     background-color: rgba(194, 152, 109, 0.3);
-    padding: 15px 5%;
+    padding: 5px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,8 +121,29 @@ body {
     text-align: left;
 }
 
+/* Previous CSS remains the same until hero-content */
+
 .hero-content {
     max-width: 600px;
+}
+
+.welcome-text {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;  /* lighter weight */
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.welcome-text::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
 }
 
 .hero h1 {
@@ -131,6 +152,8 @@ body {
     margin-bottom: 30px;
     font-weight: 700;
 }
+
+/* Rest of the CSS remains the same */
 
 .cta-button {
     background-color: var(--tan);

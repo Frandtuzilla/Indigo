@@ -455,6 +455,197 @@ body {
     letter-spacing: 0.5px;
 }
 
+/* Impact Section */
+.impact {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+/* Top Rectangle */
+.impact-header {
+    background-color: var(--deep-purple);
+    padding: 80px 0;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    width: 50%;
+    padding-left: 5%;
+    color: white;
+}
+
+.header-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.impact-btn {
+    background-color: var(--tan);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.impact-btn:hover {
+    background-color: #d3a67d;
+}
+
+/* Bottom Rectangle */
+.impact-metrics {
+    background-color: white;
+    padding: 80px 0;
+    min-height: 300px;
+}
+
+.metrics-container {
+    width: 50%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.metric {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.metric-icon {
+    font-size: 24px;
+}
+
+.metric-content h3 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--deep-purple);
+}
+
+.metric-content p {
+    font-weight: 300;
+    font-size: 16px;
+    color: #666;
+    max-width: 300px;
+}
+
+/* Floating Quote Box */
+.quote-box {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 45%;
+    background-color: var(--royal-blue);
+    padding: 60px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quote-content {
+    position: relative;
+}
+
+.quote-mark {
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    font-size: 80px;
+    opacity: 0.2;
+    font-family: Georgia, serif;
+}
+
+blockquote {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.quote-author {
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header-content h2 {
+        font-size: 42px;
+    }
+    
+    .quote-box {
+        padding: 40px;
+    }
+    
+    blockquote {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-content,
+    .metrics-container {
+        width: 90%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    
+    .quote-box {
+        position: relative;
+        width: 90%;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .impact-header,
+    .impact-metrics {
+        padding: 60px 0;
+    }
+    
+    .header-content h2 {
+        font-size: 36px;
+    }
+    
+    .metric-content h3 {
+        font-size: 36px;
+    }
+    
+    blockquote {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .impact-header,
+    .impact-metrics {
+        padding: 40px 0;
+    }
+    
+    .header-content h2 {
+        font-size: 32px;
+    }
+    
+    .quote-box {
+        padding: 30px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .initiatives-grid {

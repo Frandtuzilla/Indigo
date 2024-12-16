@@ -201,14 +201,14 @@ body {
     flex: 1;
     padding: 40px;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row; /* Changed from column to row */
+    gap: 40px;
+    align-items: flex-start; /* Align items to the top */
 }
 
 .mission-image {
+    flex: 0 0 450px; /* Don't grow, don't shrink, fixed width */
     position: relative;
-    width: 100%;
-    max-width: 500px;
 }
 
 .mission-image img {
@@ -239,6 +239,10 @@ body {
     margin-left: 4px; /* Slight adjustment for the play symbol */
 }
 
+.mission-text {
+    flex: 1; /* Take up remaining space */
+}
+
 .mission-text h3 {
     color: var(--deep-purple);
     font-size: 24px;
@@ -264,7 +268,12 @@ body {
     }
     
     .mission-content {
-        padding: 30px;
+        flex-direction: column;
+    }
+    
+    .mission-image {
+        flex: 0 0 auto;
+        width: 100%;
     }
 }
 

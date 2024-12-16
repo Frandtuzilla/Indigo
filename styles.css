@@ -306,14 +306,13 @@ body {
 .values {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    padding: 80px 5%;
+    gap: 50px;
+    padding: 80px 10%;
 }
 
 .value-card {
     position: relative;
     height: 450px;
-    border-radius: 10px;
     overflow: hidden;
     color: white;
     background-size: cover;
@@ -369,13 +368,16 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    z-index: 1; /* Ensure content stays above the gradient overlay */
+    justify-content: center; /* Changed from flex-end to center */
+    align-items: center; /* Added to center horizontally */
+    text-align: center; /* Added to center text */
+    z-index: 1;
 }
 
 .value-content h3 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
+    margin-bottom: 30px; /* Added/adjusted margin to create space between title and button */
 }
 
 .read-more {
@@ -387,12 +389,9 @@ body {
     background-color: #E5DED3; /* Beige color - adjust this hex code to match your preferred shade */
     padding: 8px 16px; /* Adds space inside the rectangle */
     border-radius: 4px; /* Optional: adds slightly rounded corners */
-    display: inline-block; /* Makes padding work properly */
+    display: inline-flex; /* Makes padding work properly */
     transition: all 0.3s ease;
-}
-
-.read-more:hover {
-    opacity: 1;
+    width: fit-content; /* This ensures the button only takes up as much space as needed */
 }
 
 /* Initiatives Section */

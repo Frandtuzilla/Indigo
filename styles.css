@@ -306,16 +306,32 @@ body {
 .values {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 40px;
     padding: 80px 5%;
 }
 
 .value-card {
     position: relative;
-    height: 300px;
+    height: 450px;
     border-radius: 10px;
     overflow: hidden;
     color: white;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Background images for each card */
+.value-card:nth-child(1) {
+    background-image: url('images/INDIGOWEBSITEIMG2.png');
+}
+
+.value-card:nth-child(2) {
+    background-image: url('images/INDIGOWEBSITEIMG3.png');
+}
+
+.value-card:nth-child(3) {
+    background-image: url('images/INDIGOWEBSITEIMG4.png');
 }
 
 .value-card::before {
@@ -325,7 +341,26 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(31, 9, 84, 0.7), rgba(31, 9, 84, 0.7));
+    /* Modified gradient to work better with background images */
+    background: linear-gradient(
+        to bottom,
+        rgba(31, 9, 84, 0.3),
+        rgba(31, 9, 84, 0.8)
+    );
+    transition: background 0.3s ease;
+}
+
+/* Optional hover effect */
+.value-card:hover::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(31, 9, 84, 0.4),
+        rgba(31, 9, 84, 0.9)
+    );
+}
+
+.value-card:hover {
+    transform: scale(1.02);
 }
 
 .value-content {
@@ -335,6 +370,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    z-index: 1; /* Ensure content stays above the gradient overlay */
 }
 
 .value-content h3 {
@@ -342,25 +378,21 @@ body {
     font-size: 24px;
 }
 
-.value-card:nth-child(1) {
-    background-color: var(--royal-blue);
-}
-
-.value-card:nth-child(2) {
-    background-color: var(--tan);
-}
-
-.value-card:nth-child(3) {
-    background-color: var(--deep-purple);
-}
-
 .read-more {
-    color: white;
     text-decoration: none;
     margin-top: 15px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    background-color: #E5DED3; /* Beige color - adjust this hex code to match your preferred shade */
+    padding: 8px 16px; /* Adds space inside the rectangle */
+    border-radius: 4px; /* Optional: adds slightly rounded corners */
+    display: inline-block; /* Makes padding work properly */
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    opacity: 1;
 }
 
 /* Initiatives Section */

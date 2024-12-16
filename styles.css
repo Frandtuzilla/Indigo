@@ -567,11 +567,10 @@ body {
 /* Floating Quote Box */
 .quote-box {
     position: absolute;
-    top: 60%;
-    right: 0%;
+    top: 50%;
+    right: 5%;
     transform: translateY(-50%);
     width: 45%;
-    height: 60%;
     background-color: var(--royal-blue);
     padding: 60px;
     color: white;
@@ -580,29 +579,38 @@ body {
 
 .quote-content {
     position: relative;
-    text-align: left; /* Ensure content is left-aligned */
+    text-align: left;
 }
 
-.quote-mark {
+.quote-mark::before {
+    content: 'format_quote';
+    font-family: 'Material Symbols Outlined';
     position: absolute;
     top: -40px;
     left: -10px;
-    font-size: 80px;
+    font-size: 48px;
     opacity: 0.2;
-    font-family: Georgia, serif;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
 }
 
 blockquote {
     font-size: 32px;
     font-weight: 600;
-    line-height: 1.6;
+    line-height: 1.3;
     margin-bottom: 20px;
     position: relative;
+    text-align: left;
+    margin-top: 20px; /* Added space for the quote mark */
 }
 
 .quote-author {
     font-weight: 300;
     opacity: 0.8;
+    text-align: left;
 }
 
 /* Responsive Design */

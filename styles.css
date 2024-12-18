@@ -582,21 +582,6 @@ body {
     text-align: left;
 }
 
-.quote-mark::before {
-    content: 'format_quote';
-    font-family: 'Material Symbols Outlined';
-    position: absolute;
-    top: -40px;
-    left: -10px;
-    font-size: 48px;
-    opacity: 0.2;
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48;
-}
-
 blockquote {
     font-size: 32px;
     font-weight: 600;
@@ -860,5 +845,87 @@ blockquote {
     .top-bar {
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+/* OUR PROGRAMS PAGE */
+
+/* Programs Header Styles */
+.programs-header {
+    background-color: var(--royal-blue);
+    padding: 60px 5%;
+    text-align: center;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.header-star {
+    font-size: 24px;
+    color: var(--tan);
+}
+
+/* Programs Grid Styles */
+.programs-grid {
+    padding: 80px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: var(--off-white);
+}
+
+.program-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.program-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program-content {
+    padding: 25px;
+}
+
+.program-content h3 {
+    color: var(--deep-purple);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.program-content p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-content h1 {
+        font-size: 36px;
     }
 }

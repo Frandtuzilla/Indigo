@@ -1072,3 +1072,265 @@ body {
         font-size: 12px;
     }
 }
+
+/* Program Content Section */
+.program-content-section {
+    padding: 60px 5%;
+    background-color: var(--off-white);
+}
+
+.program-content-container {
+    display: flex;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Main Content Area */
+.program-main-content {
+    flex: 1;
+}
+
+.program-main-image {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.program-main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Program Header */
+.program-header {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.program-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.program-star-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('images/SPARK2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.program-header h1 {
+    color: var(--deep-purple);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.program-tag {
+    display: inline-block;
+    background-color: var(--deep-purple);
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* Program Details */
+.program-details {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.program-detail-block {
+    margin-bottom: 30px;
+}
+
+.program-detail-block h2 {
+    color: var(--deep-purple);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.program-detail-block p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.program-quote {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: var(--royal-blue);
+    color: white;
+    border-radius: 8px;
+}
+
+.program-quote blockquote {
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Programs Sidebar */
+.programs-sidebar {
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    color: var(--deep-purple);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.programs-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.program-nav-item {
+    display: block;
+    padding: 12px 20px;
+    color: var(--deep-purple);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.program-nav-item:hover {
+    background-color: rgba(31, 9, 84, 0.05);
+}
+
+.program-nav-item.active {
+    background-color: var(--deep-purple);
+    color: white;
+}
+
+/* Program Icons */
+.program-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.icon-block {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.icon-block img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.icon-block h3 {
+    color: var(--deep-purple);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.icon-block p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .program-content-container {
+        gap: 30px;
+    }
+
+    .programs-sidebar {
+        width: 280px;
+    }
+}
+
+@media (max-width: 992px) {
+    .program-content-container {
+        flex-direction: column;
+    }
+
+    .programs-sidebar {
+        width: 100%;
+    }
+
+    .program-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .program-content-section {
+        padding: 40px 5%;
+    }
+
+    .program-header {
+        padding: 15px;
+    }
+
+    .program-header h1 {
+        font-size: 28px;
+    }
+
+    .program-details {
+        padding: 30px;
+    }
+
+    .program-detail-block h2 {
+        font-size: 20px;
+    }
+
+    .program-quote {
+        padding: 20px;
+    }
+
+    .program-quote blockquote {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-icons {
+        grid-template-columns: 1fr;
+    }
+
+    .program-header h1 {
+        font-size: 24px;
+    }
+
+    .program-details {
+        padding: 20px;
+    }
+
+    .program-detail-block {
+        margin-bottom: 20px;
+    }
+}

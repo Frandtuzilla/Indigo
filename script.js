@@ -6,3 +6,13 @@ window.addEventListener('scroll', function() {
         nav.classList.remove('scrolled');
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('get-involved-btn');
+    button.addEventListener('click', function() {
+        document.getElementById('volunteer-section').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});

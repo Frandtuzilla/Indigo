@@ -416,7 +416,7 @@ html {
 
 /* Initiatives Section */
 .initiatives-section {
-    padding: 80px 5%;
+    padding: 30px 5% 80px;
     text-align: center;
 }
 
@@ -437,8 +437,8 @@ html {
 .initiative-section-icon {
     width: 30px;
     height: 30px;
-    margin-bottom: 15px;
-    background-image: url('images/SPARK1.png');
+    margin: 0 auto 15px;
+    background-image: url('images/SPARK2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -512,6 +512,7 @@ html {
 
 /* Top Rectangle */
 .impact-header {
+    background-image: url('images/impactbackground.png');
     background-color: var(--deep-purple);
     padding: 80px 0;
     min-height: 400px;

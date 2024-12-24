@@ -347,15 +347,15 @@ html {
 
 /* Background images for each card */
 .value-card:nth-child(1) {
-    background-image: url('images/INDIGOWEBSITEIMG2.png');
+    background-image: url('images/INDIGOWEBSITEIMG2.jpg');
 }
 
 .value-card:nth-child(2) {
-    background-image: url('images/INDIGOWEBSITEIMG3.png');
+    background-image: url('images/INDIGOWEBSITEIMG3.jpg');
 }
 
 .value-card:nth-child(3) {
-    background-image: url('images/INDIGOWEBSITEIMG4.png');
+    background-image: url('images/INDIGOWEBSITEIMG4.jpg');
 }
 
 .value-card::before {

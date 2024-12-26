@@ -1363,6 +1363,16 @@ html {
 
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
+    
+    .top-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact-info {
+        display: none;
+    }
+
     .main-nav {
         display: flex;
         align-items: center;

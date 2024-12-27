@@ -919,7 +919,7 @@ html {
 /* Programs Hero Section */
 .programs-hero {
     background-color: var(--royal-blue);
-    min-height: 300px;
+    min-height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -952,7 +952,7 @@ html {
 
 /* Programs Grid Section */
 .programs-grid-section {
-    padding: 80px 5%;
+    padding: 50px 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -1511,4 +1511,271 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Volunteer Section */
+.volunteer-section {
+    display: flex;
+    gap: 40px;
+    padding: 60px 5%;
+}
+
+/* Left Column */
+.volunteer-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.volunteer-header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px;
+}
+
+.volunteer-title-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.volunteer-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.volunteer-section-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('images/SPARK2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.volunteer-form-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('images/SPARK1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.volunteer-title {
+    color: var(--deep-purple);
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.volunteer-description {
+    color: var(--deep-purple);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.volunteer-services {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.volunteer-services img {
+    width: 30%;
+    height: 100%;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.volunteer-services img:hover {
+    transform: translateY(-5px);
+}
+
+.volunteer-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.volunteer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.volunteer-action {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.volunteer-action-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('images/SPARK2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.volunteer-action-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--deep-purple);
+}
+
+.volunteer-action-text {
+    line-height: 1.6;
+    margin: 0;
+    color: #c2986d;
+}
+
+.volunteer-donate {
+    font-size: 14px;
+    color: var(--royal-blue);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    width: fit-content;
+    position: relative;
+}
+
+.volunteer-donate::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--royal-blue);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.volunteer-donate:hover::after {
+    transform: scaleX(1);
+}
+
+/* Right Column - Form */
+.volunteer-form {
+    width: 450px;
+    background-color: var(--deep-purple);
+    padding: 40px;
+    border-radius: 4px;
+    color: white;
+}
+
+.volunteer-form-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.volunteer-form-subtitle {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0 0 30px 0;
+    opacity: 0.9;
+}
+
+.volunteer-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.volunteer-form-input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.volunteer-form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.volunteer-form-message {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.volunteer-form-message::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.volunteer-form-submit {
+    background-color: var(--tan);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.volunteer-form-submit:hover {
+    background-color: #d3a67d;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .volunteer-section {
+        flex-direction: column;
+    }
+    
+    .volunteer-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .volunteer-section {
+        padding: 40px 5%;
+    }
+    
+    .volunteer-title {
+        font-size: 32px;
+    }
+    
+    .volunteer-services {
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .volunteer-title {
+        font-size: 28px;
+    }
+    
+    .volunteer-form {
+        padding: 30px 20px;
+    }
+
 }

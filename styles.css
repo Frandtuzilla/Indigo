@@ -1591,7 +1591,7 @@ html {
 }
 
 .volunteer-services img {
-    width: 30%;
+    width: 20%;
     height: 100%;
     padding: 15px;
     transition: transform 0.3s ease;
@@ -1783,4 +1783,162 @@ html {
         padding: 30px 20px;
     }
 
+}
+
+/* Recent Initiatives Section */
+.recent-initiatives {
+    padding: 80px 5%;
+    background-color: white;
+}
+
+/* Header Styles */
+.initiatives-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.star-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/SPARK2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto 15px;
+}
+
+.initiatives-header h2 {
+    color: var(--deep-purple);
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.initiatives-header .subtitle {
+    color: var(--royal-blue);
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Content Layout */
+.initiatives-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Featured Story Styles */
+.featured-story {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featured-story img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.featured-story h3 {
+    color: var(--deep-purple);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.featured-story p {
+    color: var(--tan);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: var(--deep-purple);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Achievements List Styles */
+.achievements-list {
+    flex: 1;
+    background-color: var(--off-white);
+    padding: 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.achievement-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.achievement-item p {
+    color: var(--deep-purple);
+    font-weight: 600;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .initiatives-content {
+        flex-direction: column;
+    }
+    
+    .achievements-list {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recent-initiatives {
+        padding: 60px 5%;
+    }
+    
+    .initiatives-header h2 {
+        font-size: 32px;
+    }
+    
+    .achievement-item img {
+        width: 80px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .initiatives-header h2 {
+        font-size: 28px;
+    }
+    
+    .achievement-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .achievement-item img {
+        width: 100%;
+        height: 120px;
+    }
 }

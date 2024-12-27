@@ -1521,7 +1521,7 @@ html {
 .volunteer-section {
     display: flex;
     gap: 40px;
-    padding: 60px 5%;
+    padding: 40px 5%;
 }
 
 /* Left Column */
@@ -1676,6 +1676,7 @@ html {
 
 /* Right Column - Form */
 .volunteer-form {
+    height: 100%;
     width: 450px;
     background-color: var(--deep-purple);
     padding: 40px;

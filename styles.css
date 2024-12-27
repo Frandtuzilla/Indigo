@@ -601,9 +601,22 @@ html {
     background-color: #E5E7EB;
 }
 
-.metric-icon {
-    width: 40px;
-    height: 40px;
+.heart-icon {
+    background-image: url('images/heart-icon.png');
+    width: 55px;
+    height: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.hands-icon {
+    background-image: url('images/hands-icon.png');
+    width: 55px;
+    height: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 
 .metric-content {

@@ -207,6 +207,26 @@ html {
     letter-spacing: 0.5px;
 }
 
+/* First year section */
+
+.one-year {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+
+.one-year video {
+    border-radius: 8px;
+    width: 100%; 
+    max-height: 480px;
+    object-fit: cover;
+}
+
+ul {
+    padding-left: 40px;
+}
+
 /* Mission Section */
 .mission {
     background-color: white;
@@ -298,6 +318,18 @@ html {
     color: #666;
     line-height: 1.6;
     font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .one-year {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .one-year-text,
+    .one-year video {
+        flex: 1;
+    }
 }
 
 /* Mission Section Responsive */
